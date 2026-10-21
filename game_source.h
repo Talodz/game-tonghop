@@ -16,6 +16,3 @@ void Doan_So_1_score_menu();
 
 
 
-void Doan_So_2();
-
-void Game_3();

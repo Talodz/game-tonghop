@@ -17,6 +17,12 @@ void show_confirm_choice_menu();
 
 bool confirm_choice();
 
+void game_start();
+
+void score_board();
+
+void help();
+
 
 
 
