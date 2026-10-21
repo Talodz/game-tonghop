@@ -6,6 +6,7 @@
 #define BLUE "\033[34m"
 #define PURPLE  "\033[35m"
 #define YELLOW "\033[33m"
+#define LIGHTBLUE "\033[36m"
 
 //ĐÂY LÀ NƠI KHAI BÁO GAME VÀ CHỨC NĂNG ĐẶC THÙ CỦA GAME
 

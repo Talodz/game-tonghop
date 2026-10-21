@@ -24,7 +24,7 @@ void Doan_So_1(){
                     //Check xem guess có trong khoảng 1 tới 100 hay không
                     if(guess >=1 && guess <=100){
                         if(guess == target){
-                            cout << GREEN << "BẠN ĐÃ CHIẾN THẮNG !!!\n" << RESET;
+                            you_win();
                             break;
                         }
                         else if(abs(target - guess) == 1){

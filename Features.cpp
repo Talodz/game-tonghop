@@ -26,10 +26,10 @@ void game_start(){
 void show_menu_game(){
         cout << RED << "================================ MENU ================================\n" << RESET ;
         cout << "Đây là chương trình Game Đoán số !\n";
-        cout << "[1] Bắt đầu chơi\n";
-        cout << "[2] Xem bảng điểm (đang cập nhật)\n";
-        cout << "[3] thông tin\n";
-        cout << "[4] Thoát\n";
+        cout << GREEN     << "[1] Bắt đầu chơi\n" << RESET;
+        cout << BLUE      << "[2] Xem bảng điểm (đang cập nhật)\n" << RESET;
+        cout << PURPLE << "[3] thông tin\n" << RESET;
+        cout << RED       << "[4] Thoát\n" << RESET;
         cout << "-----> Nhập lựa chọn : ";
 }
 
@@ -91,7 +91,15 @@ void score_board(){
 }
 
 void help(){
-    cout << "Updating...\n";
+    cout << "===================== THÔNG TIN =====================";
+    cout << "Đây là chương trình game đoán số, nhiệm vụ của bạn là";
+}
+
+void you_win(){
+    cout << GREEN << "                                         ▄▄ " << endl;                  
+    cout << "▄▄ ▄▄  ▄▄▄  ▄▄ ▄▄   ▄▄   ▄▄ ▄▄ ▄▄  ▄▄    ██ " << endl;
+    cout << "▀███▀ ██▀██ ██ ██   ██ ▄ ██ ██ ███▄██    ██ " << endl;
+    cout << "  █   ▀███▀ ▀███▀    ▀█▀█▀  ██ ██ ▀██    ▄▄ " << RESET << endl << endl;
 }
 
 
