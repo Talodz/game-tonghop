@@ -28,7 +28,7 @@ void show_menu_game(){
         cout << "Đây là chương trình Game Đoán số !\n";
         cout << GREEN     << "[1] Bắt đầu chơi\n" << RESET;
         cout << BLUE      << "[2] Xem bảng điểm (đang cập nhật)\n" << RESET;
-        cout << PURPLE << "[3] thông tin\n" << RESET;
+        cout << PURPLE << "[3] luật chơi\n" << RESET;
         cout << RED       << "[4] Thoát\n" << RESET;
         cout << "-----> Nhập lựa chọn : ";
 }
@@ -46,7 +46,7 @@ void choose_game(int Choice, bool &Loop_condition, bool &Loop_condition_2){
                     Loop_condition = 0;
                     break;
                 case 3:
-                    help();
+                    law();
                     Loop_condition = 0;
                     break;
 
@@ -90,9 +90,11 @@ void score_board(){
     cout << "Updating...\n";
 }
 
-void help(){
-    cout << "===================== THÔNG TIN =====================";
-    cout << "Đây là chương trình game đoán số, nhiệm vụ của bạn là";
+void law(){
+    cout << RED << "========================== LUẬT CHƠI ========================== \n" << RESET;
+    cout << "Khi bắt đầu, tôi sẽ tạo ra một số nguyên dương ngẫu nhiên\n";
+    cout << "nhiệm vụ của bạn là đoán trúng con số ấy với số lần đoán ít nhất\n \n";
+    cout << "Kết quả mỗi lượt chơi đều được lưu lại ở "<< BLUE << "[2] xem bảng điểm \n \n" << RESET;
 }
 
 void you_win(){
@@ -101,5 +103,18 @@ void you_win(){
     cout << "▀███▀ ██▀██ ██ ██   ██ ▄ ██ ██ ███▄██    ██ " << endl;
     cout << "  █   ▀███▀ ▀███▀    ▀█▀█▀  ██ ██ ▀██    ▄▄ " << RESET << endl << endl;
 }
+
+void you_lose(){
+    cout << RED << "                                                      ▄▄ " << endl;
+    cout << "██  ██ ▄████▄ ██  ██   ██     ▄████▄ ▄█████ ██████    ██" << endl;
+    cout << " ▀██▀  ██  ██ ██  ██   ██     ██  ██ ▀▀▀▄▄▄ ██▄▄      ██" << endl;
+    cout << "  ██   ▀████▀ ▀████▀   ██████ ▀████▀ █████▀ ██▄▄▄▄    ▄▄" << RESET << endl << endl;
+    
+
+
+    
+}
+
+
 
 

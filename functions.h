@@ -22,9 +22,11 @@ void game_start();
 
 void score_board();
 
-void help();
+void law();
 
 void you_win();
+
+void you_lose();
 
 
 

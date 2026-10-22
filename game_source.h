@@ -13,7 +13,8 @@
 void Doan_So_1();
 void Doan_So_1_menu();
 void Doan_So_1_score_menu();
-
+void Doan_so_1_Tong_ket(int score);
+bool Doan_So_1_score_0_check(int score);
 
 
 
